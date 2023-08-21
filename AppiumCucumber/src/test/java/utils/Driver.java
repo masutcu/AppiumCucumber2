@@ -23,7 +23,7 @@ public class Driver {
                     options.setAppPackage("com.touchboarder.android.api.demos");  //Uygulama paketi adini ayarlar
                     options.setAppActivity("com.touchboarder.androidapidemos.MainActivity"); //Uygulama aktivite adini ayarla
                     options.setUdid("emulator-5554");    //Cihaz UDID'sini ayarla bu kodu cmd'de "adb devices" yazarak buluruz
-                    //options.setNoReset(true);   //sifirlama islemini kapat
+                    options.setNoReset(true);   //sifirlama islemini kapat
                     options.setCapability("shouldTerminateApp",true);   // appi kapatmak için
                     options.setNewCommandTimeout(Duration.ofSeconds(20));   //yeni komut zaman asimini ayarla
                     break;
