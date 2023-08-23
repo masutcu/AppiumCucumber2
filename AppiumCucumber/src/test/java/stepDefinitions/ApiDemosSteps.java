@@ -9,7 +9,13 @@ import utils.Driver;
 import utils.ReusableMethods;
 
 public class ApiDemosSteps extends ReusableMethods {
-    //    MainScreen mainScreen = new MainScreen();
+    /*
+    Screen Class larından ayrı ayrı obje oluşturmak yerine yeni bir Screen class oluşturup
+     içine diğer class ları private yapıp metodlar oluşturuyoruz ve
+     oluşturduğumuz Class dan metod çağırarak hallediyoruz.
+     Screens Class a bak.
+     */
+    // MainScreen mainScreen = new MainScreen();
 //    ApiDemosScreen apiDemosScreen = new ApiDemosScreen();
 //    PreferenceScreen preferenceScreen = new PreferenceScreen();
 //    PreferenceDependenciesScreen preferenceDependenciesScreen = new PreferenceDependenciesScreen();
@@ -29,6 +35,7 @@ public class ApiDemosSteps extends ReusableMethods {
 
     @Given("kullanici API Demos butonuna tikladi")
     public void kullanici_apı_demos_butonuna_tikladi() {
+        //mainScreen.apiDemosButton.click(); buna gerek kalmadı tapOn() Metodumuz var
         tapOn(screens.mainScreen().apiDemosButton);
     }
 
