@@ -1,14 +1,11 @@
 package stepDefinitions;
 
-import io.appium.java_client.TouchAction;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.junit.Assert;
 import org.openqa.selenium.By;
-import org.openqa.selenium.interactions.Actions;
 import screens.Screens;
-import screens.androidScreen.DragAndDropScreen;
 import utils.Driver;
 
 import static utils.ReusableMethods.*;

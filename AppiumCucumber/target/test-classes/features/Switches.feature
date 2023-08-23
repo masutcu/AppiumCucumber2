@@ -14,7 +14,7 @@ Feature: API Demos Switches
     And kullanici check box tikladi
     And switch butonuna tikladi
     Then screenshot al
-@emre
+
   Scenario: Switch button checks
     And check box secili olmali
     And ilk switch butonu kapali

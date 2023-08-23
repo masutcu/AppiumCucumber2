@@ -8,10 +8,8 @@ import utils.Driver;
 
 import java.time.Duration;
 
-public class MainScreen {
-    public MainScreen(){
-        PageFactory.initElements(new AppiumFieldDecorator(Driver.getDriver(), Duration.ofSeconds(30)),this);
-    }
+public class MainScreen extends ApiDemosMain {
+
     @FindBy(xpath = "(//android.widget.ImageView)[1]")
     public WebElement mainScreenTitle;
 

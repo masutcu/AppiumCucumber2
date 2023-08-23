@@ -8,11 +8,9 @@ import utils.Driver;
 
 import java.time.Duration;
 
-public class PreferenceDependenciesScreen {
+public class PreferenceDependenciesScreen extends ApiDemosMain{
 
-   public PreferenceDependenciesScreen(){
-        PageFactory.initElements(new AppiumFieldDecorator(Driver.getDriver(), Duration.ofSeconds(30)),this);
-    }
+
 
     @FindBy(id="android:id/checkbox")
     public WebElement checkBox;

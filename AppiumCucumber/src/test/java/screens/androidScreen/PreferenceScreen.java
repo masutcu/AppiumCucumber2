@@ -8,11 +8,9 @@ import utils.Driver;
 
 import java.time.Duration;
 
-public class PreferenceScreen {
+public class PreferenceScreen extends ApiDemosMain{
 
-    public PreferenceScreen(){
-        PageFactory.initElements(new AppiumFieldDecorator(Driver.getDriver(), Duration.ofSeconds(30)),this);
-    }
+
 
     @FindBy(xpath = "//android.widget.TextView[@text='Preference']")
     public WebElement preferenceScreenTitle;

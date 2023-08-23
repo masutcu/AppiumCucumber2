@@ -6,10 +6,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import utils.Driver;
 
-public class DragAndDropScreen {
-    public DragAndDropScreen(){
-        PageFactory.initElements(new AppiumFieldDecorator(Driver.getDriver()),this);
-    }
+public class DragAndDropScreen extends ApiDemosMain{
 
     @FindBy(id = "com.touchboarder.android.api.demos:id/drag_dot_1")
     public WebElement firstDot;

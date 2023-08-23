@@ -9,10 +9,8 @@ import utils.Driver;
 
 import java.time.Duration;
 
-public class DateWidgetsScreen {
-    public DateWidgetsScreen() {
-        PageFactory.initElements(new AppiumFieldDecorator(Driver.getDriver(), Duration.ofSeconds(30)), this);
-    }
+public class DateWidgetsScreen extends ApiDemosMain{
+
 
     @AndroidFindBy(accessibility = "9")
     public WebElement num9;

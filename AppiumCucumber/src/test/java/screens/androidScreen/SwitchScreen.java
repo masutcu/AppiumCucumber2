@@ -8,11 +8,9 @@ import utils.Driver;
 
 import java.time.Duration;
 
-public class SwitchScreen {
+public class SwitchScreen extends ApiDemosMain{
 
-    public SwitchScreen(){
-        PageFactory.initElements(new AppiumFieldDecorator(Driver.getDriver(), Duration.ofSeconds(30)),this);
-    }
+
 
     @FindBy(id = "android:id/checkbox")
     public WebElement checkBox;

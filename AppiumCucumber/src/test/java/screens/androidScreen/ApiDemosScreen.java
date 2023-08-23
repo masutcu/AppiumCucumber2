@@ -8,11 +8,9 @@ import utils.Driver;
 
 import java.time.Duration;
 
-public class ApiDemosScreen {
+public class ApiDemosScreen extends ApiDemosMain{
 
-    public ApiDemosScreen(){
-        PageFactory.initElements(new AppiumFieldDecorator(Driver.getDriver(), Duration.ofSeconds(30)),this);
-    }
+
     @FindBy(xpath = "//android.widget.TextView[@text='API Demos']")
     public WebElement apiDemosTitle;
 

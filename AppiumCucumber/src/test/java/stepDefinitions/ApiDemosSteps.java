@@ -5,10 +5,6 @@ import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import org.junit.Assert;
 import screens.Screens;
-import screens.androidScreen.ApiDemosScreen;
-import screens.androidScreen.MainScreen;
-import screens.androidScreen.PreferenceDependenciesScreen;
-import screens.androidScreen.PreferenceScreen;
 import utils.Driver;
 import utils.ReusableMethods;
 
