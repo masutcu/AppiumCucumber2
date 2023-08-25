@@ -1,5 +1,6 @@
 package stepDefinitions;
 
+import io.appium.java_client.TouchAction;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
@@ -34,6 +35,13 @@ public class ViewSteps {
         Assert.assertTrue(isElementPresent(screens.dragAndDropScreen().firstDot));
         Assert.assertTrue(isElementPresent(screens.dragAndDropScreen().secondDot));
         Assert.assertTrue(isElementPresent(screens.dragAndDropScreen().thirdDot));
+        /*
+        //Appium1 için
+        TouchAction touchAction=new TouchAction(Driver.getAppiumDriver());
+        touchAction.longPress(ElementOption.element(screens.dragAndDropScreen().firstDot))
+        .moveTo(ElementOption.element(screens.drapAndDropScreen().secondDot)).realease.perform();
+        */
+
         dragAndDrop(Driver.getDriver(),screens.dragAndDropScreen().firstDot,screens.dragAndDropScreen().secondDot);
     }
 
@@ -52,6 +60,8 @@ public class ViewSteps {
     public void kullaniciTenEYesilTopuKaydirsin(int dakika1, int dakika2) {
         dragAndDrop(Driver.getDriver(),screens.dateWidgetsScreen().num15, screens.dateWidgetsScreen().num45);
     }
+
+
 
     @And("kullanici {string} butonuna uzun basti")
     public void kullaniciButonunaUzunBasti(String text) {

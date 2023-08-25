@@ -8,7 +8,6 @@ import java.time.Duration;
 
 public class ApiDemosMain {
     public ApiDemosMain(){
-
             PageFactory.initElements(new AppiumFieldDecorator(Driver.getDriver(), Duration.ofSeconds(30)),this);
         }
 
